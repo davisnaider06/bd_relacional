@@ -1,0 +1,16 @@
+-- 2. Criar a tabela focos_calor
+CREATE TABLE focos_calor (
+    id serial PRIMARY KEY,
+    estado VARCHAR(50),
+    bioma VARCHAR(50),
+    data_ocorrencia DATE
+);
+
+-- 3. Inserir registros
+INSERT INTO focos_calor (estado, bioma, data_ocorrencia) VALUES
+('Amazonas', 'Amazônia', '2025-02-01'),
+('Mato Grosso', 'Cerrado', '2025-02-03'),
+('Pará', 'Amazônia', '2025-02-05');
+
+-- 4. Consulta para exibir
+SELECT * FROM focos_calor;
